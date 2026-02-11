@@ -42,7 +42,7 @@ export default function Window({
     <AnimatePresence>
       {isOpen && !isMinimised && (
         <motion.div
-          drag={!isMaximized && !isMobile} // Disable drag on mobile to prevent accidental swipes? Or keep it? keeping it for now but maybe harder.
+          drag={!isMaximized && !isMobile}
           dragMomentum={false}
           initial={{ scale: 0, opacity: 0 }}
           animate={{
@@ -64,7 +64,7 @@ export default function Window({
           )}
           onClick={onFocus}
         >
-          {/* Window Header */}
+
           <div
             className="h-8 bg-[#2c001e] flex items-center justify-between px-2 select-none cursor-default shrink-0"
             onDoubleClick={() => setIsMaximized(!isMaximized)}
@@ -82,7 +82,7 @@ export default function Window({
               </button>
               <button
                 onClick={() => setIsMaximized(!isMaximized)}
-                className="p-1 hover:bg-white/10 rounded-full transition-colors hidden md:block" // Hide maximize on mobile as it's always full
+                className="p-1 hover:bg-white/10 rounded-full transition-colors hidden md:block"
                 aria-label="Maximize"
               >
                 <Square size={12} className="text-white" />
@@ -97,7 +97,7 @@ export default function Window({
             </div>
           </div>
 
-          {/* Window Content */}
+
           <div className="flex-1 overflow-auto p-4 bg-[#333333] text-white/90">
             {children}
           </div>

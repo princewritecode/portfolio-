@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   title: "PrinceOS | Portfolio",
   description: "Prince Patel's Portfolio - Full Stack Developer",
   icons: {
-    icon: 'https://raw.githubusercontent.com/vivek9patel/vivek9patel.github.io/main/favicon.ico', // Placeholder favicon
+    icon: 'https://raw.githubusercontent.com/vivek9patel/vivek9patel.github.io/main/favicon.ico',
   }
 };
 

@@ -60,7 +60,7 @@ function DockIcon({
       <span className="absolute left-full ml-4 px-2 py-1 bg-black/80 text-white text-xs rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap pointer-events-none z-50">
         {label}
       </span>
-      {/* Activity Indicator Dot */}
+
       <div className="absolute -left-1 top-1/2 -translate-y-1/2 w-1 h-1 rounded-full bg-[#E95420] opacity-0 group-hover:opacity-100" />
     </motion.div>
   );

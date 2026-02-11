@@ -22,9 +22,7 @@ export default function About() {
           <p>
             MERN Stack is my super power. I specialize in building scalable web applications using MongoDB, Express, React, and Node.js.
           </p>
-          <p>
-            I also have a strong background in Data Structures and Algorithms with C++, which helps me write efficient and optimized code.
-          </p>
+        
           <div>
             <h2 className="text-xl font-bold mb-2 text-[#E95420]">Skills</h2>
             <div className="flex flex-wrap gap-2">

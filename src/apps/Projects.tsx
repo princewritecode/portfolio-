@@ -51,7 +51,6 @@ export default function Projects() {
                  <span className="flex items-center space-x-1"><GitFork size={14} /> <span>{project.forks}</span></span>
                </div>
                <div className="flex items-center space-x-3">
-                  {/* Keep explicit text links even though whole card is clickable */}
                   {project.demoLink ? (
                     <span className="flex items-center space-x-1 text-[#E95420]">
                       <ExternalLink size={16} />

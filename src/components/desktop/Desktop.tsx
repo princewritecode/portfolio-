@@ -28,19 +28,18 @@ export default function Desktop() {
     setWindows((prev) => {
       const existing = prev.find((w) => w.id === appId);
       if (existing) {
-        if (existing.isMinimised) {
-          // Restore and focus
+          if (existing.isMinimised) {
           return prev.map((w) =>
             w.id === appId ? { ...w, isMinimised: false, zIndex: activeZIndex + 1 } : w
           );
         }
-        // Just focus
+
         return prev.map((w) =>
           w.id === appId ? { ...w, zIndex: activeZIndex + 1 } : w
         );
       }
 
-      // Open new window
+
       let component;
       let title;
       switch (appId) {
@@ -64,9 +63,7 @@ export default function Desktop() {
           return prev;
       }
 
-      // Check if window object already exists but closed? No, we filter/manage state.
-      // Actually simpler: windows list contains ALL possible windows or just OPEN ones?
-      // Let's say list contains all active/minimized windows.
+
       return [
         ...prev,
         { id: appId, title, component, isOpen: true, isMinimised: false, zIndex: activeZIndex + 1 },
