@@ -1,6 +1,5 @@
 # 🍎 PrinceOS Portfolio
 
-![PrinceOS Desktop](./public/preview.png)
 
 > A "Best in Class" interactive portfolio website inspired by Ubuntu 20.04, built with **Next.js**, **Tailwind CSS**, and **Framer Motion**.
 
